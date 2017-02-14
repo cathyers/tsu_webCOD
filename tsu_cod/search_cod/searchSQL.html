@@ -1,0 +1,22 @@
+<html>
+<head>
+	<meta charset="utf-8" /> 
+    <title>Search - w3cschool.cc</title>
+</head>
+<body>
+	<form action="/search_cod/" method="post">
+		{% csrf_token %}
+		<input type="text" name="q">
+		<input type="submit" value="Submit">
+	</form>
+
+	<p>{{ journal }}</p>
+	<p>{{ title }}</p>
+	<p>{{ a }}</p>
+	<p>{{ b }}</p>
+	<p>{{ c }}</p>
+	<p>{{ alpha }}</p>
+	<p>{{ beta }}</p>
+	<p>{{ gamma }}</p>
+</body>
+</html>
